@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('starter.controllers', ['ionic'])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
   // Form data for the login modal
@@ -33,7 +33,10 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('PlaylistsCtrl', function($scope) {
+
+.controller('PlaylistsCtrl', function($scope,$ionicGesture,$ionicSideMenuDelegate) {
+  
+
   $scope.playlists = [
     { title: 'Reggae', id: 1 },
     { title: 'Chill', id: 2 },
@@ -42,7 +45,27 @@ angular.module('starter.controllers', [])
     { title: 'Rap', id: 5 },
     { title: 'Cowbell', id: 6 }
   ];
+
+ 
+  $scope.detectOS = function(){
+    if(ionic.Platform.isAndroid()){
+      return true;
+    }
+    else{
+      return false;
+    }
+  };
+
+  
+
+ 
+
+  
+
+  // $scope.kau = function(){
+  //   console.log("on la scroll tuuu");
+  // };
 })
 
-.controller('PlaylistCtrl', function($scope, $stateParams) {
-});
+// .controller('PlaylistCtrl', function($scope, $stateParams) {
+// });

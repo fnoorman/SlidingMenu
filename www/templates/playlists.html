@@ -1,9 +1,224 @@
-<ion-view view-title="Playlists">
-  <ion-content>
-    <ion-list>
+<ion-view view-title="Home">
+  <ion-content scrollbar-y="false" direction="y" id="c1" >
+    <!-- <ion-list>
       <ion-item ng-repeat="playlist in playlists" href="#/app/playlists/{{playlist.id}}">
         {{playlist.title}}
       </ion-item>
-    </ion-list>
+    </ion-list> -->
+    <div class="card">
+	  <div class="item item-divider">
+	    I'm a Header in a Card!
+	  </div>
+	  <div class="item item-text-wrap">
+	    This is a basic Card with some text.
+	  </div>
+	  <div class="item item-divider">
+	    I'm a Footer in a Card!
+	  </div>
+	</div>
+
+	<h6 ng-if="detectOS()"> Platform Android</h6>
+
+	<h3>Latest</h3>
+	<hr>
+	<div class="card">
+	  <div class="item item-divider">
+	    Web Comics
+	    <span class="pull-right">
+	    	<label class="label-more">more</label>
+	    </span>
+	  </div>
+	  <div class="item item-text-wrap">
+	    <div class="row row-center">
+		  <div class="col col-center text-center">
+			
+				<img src="img/i1.png" alt="">	
+		
+			
+
+		  </div>
+		  <div class="col col-center text-center">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="card">
+		<div class="item item-divider">
+			Motion Comics
+			 <span class="pull-right">
+		    	<label class="label-more">more</label>
+		    </span>
+		</div>
+		<div class="item item-text-wrap">
+			<div class="row row-center">
+			  <div class="col col-center text-center">
+					<img src="img/i2.png" alt="">	
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="item item-divider">
+			Merchandise
+			<span class="pull-right">
+			    	<label class="label-more">more</label>
+		    </span>
+		</div>
+		
+		<div class="item item-text-wrap">
+			<div class="row row-center">
+			  <div class="col col-center text-center">
+					<img src="img/i3.png" alt="">	
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			</div>
+		</div>
+		
+	</div>
+
+
+	<h3>Popular</h3>
+	<hr>
+	<div class="card">
+	  <div class="item item-divider">
+	    Web Comics
+	    <span class="pull-right">
+	    	<label class="label-more">more</label>
+	    </span>
+	  </div>
+	  <div class="item item-text-wrap">
+	    <div class="row row-center">
+		  <div class="col col-center text-center">
+			
+				<img src="img/i1.png" alt="">	
+		
+			
+
+		  </div>
+		  <div class="col col-center text-center">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		  <div class="col col-center text-center hidden-xs">
+		  	<img src="img/i1.png" alt="">
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<div class="card">
+		<div class="item item-divider">
+			Motion Comics
+			 <span class="pull-right">
+		    	<label class="label-more">more</label>
+		    </span>
+		</div>
+		<div class="item item-text-wrap">
+			<div class="row row-center">
+			  <div class="col col-center text-center">
+					<img src="img/i2.png" alt="">	
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i2.png" alt="">
+			  </div>
+			</div>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="item item-divider">
+			Merchandise
+			<span class="pull-right">
+			    	<label class="label-more">more</label>
+		    </span>
+		</div>
+		
+		<div class="item item-text-wrap">
+			<div class="row row-center">
+			  <div class="col col-center text-center">
+					<img src="img/i3.png" alt="">	
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			  <div class="col col-center text-center hidden-xs">
+			  	<img src="img/i3.png" alt="">
+			  </div>
+			</div>
+		</div>
+		
+	</div>
+
   </ion-content>
 </ion-view>

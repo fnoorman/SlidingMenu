@@ -1,1 +1,36 @@
 /* Empty. Add your own CSS if you like */
+@media (max-width: 567px){
+	.hidden-xs{
+		display: none;
+	}
+}
+
+.pull-right{
+	float: right !important;
+}
+
+.label-more {
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 75%;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+	background-color: #5cb85c;
+}
+
+section {
+    /*background: black;
+    color: white;
+    border-radius: 1em;*/
+    padding: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}

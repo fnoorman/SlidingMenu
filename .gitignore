@@ -4,3 +4,7 @@
 node_modules/
 platforms/
 plugins/
+
+#remove ionic.project
+ionic.project
+
