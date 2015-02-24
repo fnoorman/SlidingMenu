@@ -5,6 +5,7 @@ node_modules/
 platforms/
 plugins/
 hooks/
+www/css/ionic.app.*
 
 #remove ionic.project
 ionic.project
